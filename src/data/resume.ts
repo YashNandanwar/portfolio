@@ -16,18 +16,18 @@ export const resumeData = {
       period: "Aug 2023 - Jun 2027"
     },
     {
-      institution: "Sandipani School, Nagpur",
-      location: "Nagpur, India",
-      degree: "CBSE",
-      score: "Class X: 73.5%",
-      period: "Completed 2021"
-    },
-    {
       institution: "ST. XAVIER'S, Nagpur",
       location: "Nagpur, India",
       degree: "CBSE",
       score: "Class XII: 67.6% ",
       period: "Completed 2023"
+    },
+    {
+      institution: "Sandipani School, Nagpur",
+      location: "Nagpur, India",
+      degree: "CBSE",
+      score: "Class X: 73.5%",
+      period: "Completed 2021"
     }
   ],
   experience: [

@@ -73,8 +73,8 @@ export function Hero() {
             transform: `translate(${mousePos.x * 0.3}px, ${mousePos.y * 0.3}px)`,
           }}
         >
-          YASH <br />
-          NANDANWAR
+          Y A S H <br />
+          N A N D A N W A R
         </motion.h1>
       </motion.div>
 
@@ -120,7 +120,7 @@ export function Hero() {
           </motion.div>
 
           {/* Center silhouette / photo area */}
-          <div className=" h-[70%] w-[50%] scale-120 absolute flex items-center justify-center bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+          <div className=" h-[68%] w-[35%] scale-120 absolute flex items-center justify-center bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
             <img src="./hero.png" alt="" />
 
           </div>
