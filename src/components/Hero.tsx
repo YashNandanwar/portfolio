@@ -83,7 +83,7 @@ export function Hero() {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="absolute top-[14%] left-1/2 -translate-x-1/2 z-20 pointer-events-none"
+        className="absolute top-[12%] left-1/2 -translate-x-1/2 z-20 pointer-events-none"
         style={{
           transform: `translate(calc(-50% + ${mousePos.x * 0.5}px), ${mousePos.y * 0.5}px)`,
         }}
@@ -120,7 +120,7 @@ export function Hero() {
           </motion.div>
 
           {/* Center silhouette / photo area */}
-          <div className=" h-[68%] w-[35%] scale-120 absolute flex items-center justify-center bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+          <div className=" h-[65%] w-[35%] scale-120 absolute flex items-center justify-center bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
             <img src="./hero.png" alt="" />
 
           </div>
