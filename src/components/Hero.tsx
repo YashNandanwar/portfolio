@@ -120,7 +120,7 @@ export function Hero() {
           </motion.div>
 
           {/* Center silhouette / photo area */}
-          <div className="h-[52%] sm:h-[60%] md:h-[65%] w-[75%] sm:w-[50%] md:w-[35%] scale-110 sm:scale-120 absolute flex items-center justify-center bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+          <div className="h-[52%] sm:h-[60%] md:h-[77%] w-[75%] sm:w-[50%] md:w-[35%] scale-110 sm:scale-120 absolute flex items-center justify-center bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
             <img src="./hero.png" alt="" className="max-h-full object-contain" />
           </div>
 
