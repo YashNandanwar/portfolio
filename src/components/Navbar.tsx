@@ -31,7 +31,7 @@ export function Navbar() {
         scrolled ? "glass py-4 shadow-sm shadow-white/5" : "bg-transparent py-6"
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tighter">
           Yash<span className="text-secondary">.</span>
         </Link>
@@ -51,7 +51,7 @@ export function Navbar() {
 
         {/* Mobile Nav Toggle */}
         <button
-          className="md:hidden text-secondary hover:text-white transition-colors"
+          className="md:hidden text-secondary hover:text-white transition-colors p-2 -mr-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -66,7 +66,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full glass border-t-0 flex flex-col items-center py-6 gap-6 md:hidden shadow-lg shadow-black/50"
+            className="absolute top-full left-0 w-full glass backdrop-blur-xl border-t-0 flex flex-col items-center py-6 gap-6 md:hidden shadow-lg shadow-black/50"
           >
             {navLinks.map((link) => (
               <Link

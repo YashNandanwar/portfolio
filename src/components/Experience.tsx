@@ -21,13 +21,13 @@ export function Experience() {
     <section
       ref={sectionRef}
       id="experience"
-      className="py-28 relative overflow-hidden"
+      className="py-16 md:py-28 relative overflow-hidden"
       style={{ background: "#0a0a0a" }}
     >
       {/* Subtle grid pattern */}
       <div className="exp-grid-bg" />
 
-      <div className="container mx-auto px-6 md:px-12 max-w-5xl">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 max-w-5xl">
 
         {/* Heading */}
         <motion.div
@@ -35,7 +35,7 @@ export function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="mb-20"
+          className="mb-12 md:mb-20"
         >
           <p className="exp-eyebrow">Career Path</p>
           <h2 className="exp-heading">
@@ -63,7 +63,7 @@ export function Experience() {
           </div>
 
           {/* ── Experience entries ── */}
-          <div className="space-y-16 pl-14 md:pl-20">
+          <div className="space-y-12 sm:space-y-16 pl-10 sm:pl-14 md:pl-20">
             {resumeData.experience.map((exp, index) => (
               <div key={index} className="relative">
 
@@ -90,7 +90,7 @@ export function Experience() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.55, delay: 0.1, ease: "easeOut" }}
-                  className="exp-card group"
+                  className="exp-card group p-4 sm:p-6"
                 >
                   {/* Card top glow line on hover */}
                   <div className="exp-card-top-line" />
@@ -153,7 +153,7 @@ export function Experience() {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.3, type: "spring" }}
-              className="relative -ml-14 md:-ml-20 flex items-center gap-4 pl-14 md:pl-20"
+              className="relative -ml-10 sm:-ml-14 md:-ml-20 flex items-center gap-4 pl-10 sm:pl-14 md:pl-20"
             >
               <div className="exp-end-dot" />
               <span className="exp-end-label">More to come…</span>

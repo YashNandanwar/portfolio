@@ -41,17 +41,17 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 relative">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-16 md:py-24 relative">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="max-w-4xl mx-auto mb-16 text-center"
+          className="max-w-4xl mx-auto mb-10 md:mb-16 text-center"
         >
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Let's Work Together</h2>
-          <p className="text-secondary text-lg">Interested in collaborating or have a question? Send me a message.</p>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight mb-4">Let's Work Together</h2>
+          <p className="text-secondary text-base sm:text-lg">Interested in collaborating or have a question? Send me a message.</p>
         </motion.div>
 
         <motion.div

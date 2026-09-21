@@ -183,7 +183,7 @@ export function Skills() {
   return (
     <section
       id="skills"
-      className="skills-section relative py-24 overflow-hidden"
+      className="skills-section relative py-16 md:py-24 overflow-hidden"
       style={{ background: "linear-gradient(160deg, #9A0002 0%, #7A0001 50%, #5C0001 100%)" }}
     >
       {/* Grain overlay */}
@@ -202,7 +202,7 @@ export function Skills() {
         style={{ background: "radial-gradient(circle, rgba(239,230,222,0.07) 0%, transparent 70%)" }}
       />
 
-      <div className="relative z-10 container mx-auto px-6 md:px-12">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-12">
 
         {/* Section heading */}
         <motion.div
@@ -210,7 +210,7 @@ export function Skills() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
-          className="mb-14"
+          className="mb-10 md:mb-14"
         >
           <p className="skills-eyebrow">What I work with</p>
           <h2 className="skills-heading">

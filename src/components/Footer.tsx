@@ -7,9 +7,9 @@ export function Footer() {
   const year = new Date().getFullYear();
   
   return (
-    <footer className="border-t border-border mt-32 py-12">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="flex flex-col items-center md:items-start gap-2">
+    <footer className="border-t border-border mt-20 md:mt-32 py-8 md:py-12">
+      <div className="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left">
           <Link href="/" className="text-xl font-bold tracking-tighter">
             Yash<span className="text-secondary">.</span>
           </Link>
@@ -31,7 +31,7 @@ export function Footer() {
           </a>
         </div>
         
-        <div className="text-secondary text-sm">
+        <div className="text-secondary text-sm text-center md:text-right">
           &copy; {year} {resumeData.name}.
         </div>
       </div>

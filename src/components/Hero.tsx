@@ -100,7 +100,7 @@ export function Hero() {
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="absolute bottom-10 left-6 md:left-12 z-20"
+            className="absolute bottom-3 sm:bottom-6 md:bottom-10 left-3 sm:left-6 md:left-12 z-20 max-w-[42%] sm:max-w-none"
           >
             <p className="hero-bottom-label">
               {resumeData.name}
@@ -112,7 +112,7 @@ export function Hero() {
             initial={{ opacity: 1, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="absolute bottom-10 right-6 md:right-12 z-20"
+            className="absolute bottom-3 sm:bottom-6 md:bottom-10 right-3 sm:right-6 md:right-12 z-20 max-w-[42%] sm:max-w-none"
           >
             <p className="hero-bottom-label text-right">
               {resumeData.role}
@@ -120,9 +120,8 @@ export function Hero() {
           </motion.div>
 
           {/* Center silhouette / photo area */}
-          <div className=" h-[65%] w-[35%] scale-120 absolute flex items-center justify-center bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
-            <img src="./hero.png" alt="" />
-
+          <div className="h-[52%] sm:h-[60%] md:h-[65%] w-[75%] sm:w-[50%] md:w-[35%] scale-110 sm:scale-120 absolute flex items-center justify-center bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+            <img src="./hero.png" alt="" className="max-h-full object-contain" />
           </div>
 
           {/* CTA Buttons — positioned above the bottom labels */}
@@ -130,7 +129,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="absolute bottom-28 left-1/2 -translate-x-1/2 z-30 flex flex-wrap items-center gap-4 justify-center"
+            className="absolute bottom-20 sm:bottom-24 md:bottom-28 left-1/2 -translate-x-1/2 z-30 flex flex-wrap items-center gap-3 sm:gap-4 justify-center w-full px-4 max-w-md sm:max-w-none"
           >
             <Link
               href="#projects"
@@ -150,7 +149,7 @@ export function Hero() {
               <Download size={16} />
               Resume
             </a>
-            <div className="flex items-center gap-3 ml-2">
+            <div className="flex items-center gap-3 sm:ml-2">
               <a href={resumeData.contact.github} target="_blank" rel="noopener noreferrer" className="hero-icon-btn" aria-label="GitHub">
                 <GithubIcon size={18} />
               </a>
@@ -168,7 +167,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2, duration: 1 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2"
+            className="absolute bottom-3 sm:bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2 pointer-events-none"
           >
             <div className="hero-scroll-indicator">
               <div className="hero-scroll-dot" />
@@ -182,7 +181,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.8 }}
-        className="absolute top-[12%] left-1/2 z-30 -translate-x-1/2 -translate-y-1/2 ml-40"
+        className="absolute top-[16%] sm:top-[14%] md:top-[12%] left-1/2 z-30 -translate-x-1/2 -translate-y-1/2 ml-0 md:ml-40 px-4 max-w-[90vw] sm:max-w-none flex justify-center"
         style={{
           transform: `translate(calc(-50% + ${mousePos.x * 0.2}px), ${mousePos.y * 0.2}px)`,
         }}
@@ -193,7 +192,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.5 }}
-          className="hero-role-ticker w-full text-center"
+          className="hero-role-ticker text-center"
         >
           {roles[currentRoleIndex]}
         </motion.p>
