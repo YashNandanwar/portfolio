@@ -153,18 +153,26 @@
 /* Role ticker */
 .hero-role-ticker {
   font-family: var(--font-sans);
-  font-size: clamp(11px, 1.3vw, 15px);
+  font-size: clamp(10px, 1.3vw, 15px);
   font-weight: 400;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.6);
   border: 1px solid rgba(255,255,255,0.2);
-  padding: 6px 18px;
+  padding: 5px 12px;
   border-radius: 999px;
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(8px);
   white-space: nowrap;
   transition: transform 0.1s ease-out;
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .hero-role-ticker {
+    letter-spacing: 0.25em;
+    padding: 6px 18px;
+  }
 }
 
 /* CTA Buttons */

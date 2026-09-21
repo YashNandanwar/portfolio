@@ -83,12 +83,12 @@ export function Hero() {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="absolute top-[12%] left-1/2 -translate-x-1/2 z-20 pointer-events-none"
+        className="absolute top-[8.5%] sm:top-[10%] md:top-[12%] left-1/2 -translate-x-1/2 z-20 pointer-events-none flex justify-center text-center w-full px-4"
         style={{
           transform: `translate(calc(-50% + ${mousePos.x * 0.5}px), ${mousePos.y * 0.5}px)`,
         }}
       >
-        <span className="hero-script-text">Creative</span>
+        <span className="hero-script-text text-center">Creative</span>
       </motion.div>
 
       {/* Main content layer */}
@@ -181,7 +181,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.8 }}
-        className="absolute top-[16%] sm:top-[14%] md:top-[12%] left-1/2 z-30 -translate-x-1/2 -translate-y-1/2 ml-0 md:ml-40 px-4 max-w-[90vw] sm:max-w-none flex justify-center"
+        className="absolute top-[16.5%] sm:top-[16%] md:top-[12%] left-1/2 z-30 -translate-x-1/2 -translate-y-1/2 ml-0 md:ml-44 px-4 w-full max-w-sm sm:max-w-none flex justify-center text-center items-center"
         style={{
           transform: `translate(calc(-50% + ${mousePos.x * 0.2}px), ${mousePos.y * 0.2}px)`,
         }}
@@ -192,7 +192,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.5 }}
-          className="hero-role-ticker text-center"
+          className="hero-role-ticker text-center max-w-full truncate"
         >
           {roles[currentRoleIndex]}
         </motion.p>
